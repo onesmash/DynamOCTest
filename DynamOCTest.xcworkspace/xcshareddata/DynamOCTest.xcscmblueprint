@@ -1,0 +1,29 @@
+{
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "44DBE8B648E65F3CB8ECF06D0DC94F0C85BF0BE7" : 9223372036854775807,
+    "D6326B344D07DF8AABB3FB6BF8C587B4CBBDEE70" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "481FD2E7-06A7-4621-89BE-34D58FFDFBAB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "44DBE8B648E65F3CB8ECF06D0DC94F0C85BF0BE7" : "DynamOCTest\/DynamOC\/",
+    "D6326B344D07DF8AABB3FB6BF8C587B4CBBDEE70" : "DynamOCTest\/DynamOC\/third_party\/runtime\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "DynamOCTest",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "DynamOCTest.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/g.hz.netease.com\/hzxuhui\/DynamOC.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "44DBE8B648E65F3CB8ECF06D0DC94F0C85BF0BE7"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/g.hz.netease.com\/hzxuhui\/runtime.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D6326B344D07DF8AABB3FB6BF8C587B4CBBDEE70"
+    }
+  ]
+}
