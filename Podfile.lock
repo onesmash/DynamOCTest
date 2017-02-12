@@ -1,0 +1,19 @@
+PODS:
+  - DynamOC (0.0.6):
+    - LuaJIT (~> 0.1.8)
+  - LuaJIT (0.1.8)
+
+DEPENDENCIES:
+  - DynamOC (from `DynamOC`)
+
+EXTERNAL SOURCES:
+  DynamOC:
+    :path: DynamOC
+
+SPEC CHECKSUMS:
+  DynamOC: 1f74588f447ef7015c048084e3ff63585402e9b8
+  LuaJIT: bcbac02ba6fec133d1461140c7dd4c5737e4a526
+
+PODFILE CHECKSUM: 9fcf01b5b8cdda3607e356a2d7b6dbee04ba281b
+
+COCOAPODS: 1.0.0
