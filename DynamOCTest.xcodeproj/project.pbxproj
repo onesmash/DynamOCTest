@@ -13,6 +13,7 @@
 		0303BF001E509F0E00AC4108 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0303BEFE1E509F0E00AC4108 /* Main.storyboard */; };
 		0303BF021E509F0E00AC4108 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0303BF011E509F0E00AC4108 /* Assets.xcassets */; };
 		0303BF051E509F0E00AC4108 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0303BF031E509F0E00AC4108 /* LaunchScreen.storyboard */; };
+		033E3CED1E520294000F980C /* TestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 033E3CEC1E520294000F980C /* TestClass.m */; };
 		03B690E91E50AA7200F4DBF3 /* test.lua in Resources */ = {isa = PBXBuildFile; fileRef = 03B690E81E50AA7200F4DBF3 /* test.lua */; };
 		ED0EB2C7411B836264DAE0A9 /* libPods-DynamOCTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 312808C396E3B2226D2F47F9 /* libPods-DynamOCTest.a */; };
 /* End PBXBuildFile section */
@@ -28,6 +29,8 @@
 		0303BF011E509F0E00AC4108 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0303BF041E509F0E00AC4108 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0303BF061E509F0E00AC4108 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		033E3CEB1E520294000F980C /* TestClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestClass.h; sourceTree = "<group>"; };
+		033E3CEC1E520294000F980C /* TestClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestClass.m; sourceTree = "<group>"; };
 		03B690E81E50AA7200F4DBF3 /* test.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.lua; sourceTree = "<group>"; };
 		09E2EE05CF80E109BEBCF20F /* Pods-DynamOCTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DynamOCTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DynamOCTest/Pods-DynamOCTest.debug.xcconfig"; sourceTree = "<group>"; };
 		312808C396E3B2226D2F47F9 /* libPods-DynamOCTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DynamOCTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,6 +80,8 @@
 				0303BF061E509F0E00AC4108 /* Info.plist */,
 				0303BEF51E509F0E00AC4108 /* Supporting Files */,
 				03B690E81E50AA7200F4DBF3 /* test.lua */,
+				033E3CEB1E520294000F980C /* TestClass.h */,
+				033E3CEC1E520294000F980C /* TestClass.m */,
 			);
 			path = DynamOCTest;
 			sourceTree = "<group>";
@@ -230,6 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				033E3CED1E520294000F980C /* TestClass.m in Sources */,
 				0303BEFD1E509F0E00AC4108 /* ViewController.m in Sources */,
 				0303BEFA1E509F0E00AC4108 /* AppDelegate.m in Sources */,
 				0303BEF71E509F0E00AC4108 /* main.m in Sources */,
