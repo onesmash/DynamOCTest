@@ -9,13 +9,6 @@
 #import "ViewController.h"
 #include <dlfcn.h>
 
-void test()
-{
-    printf("hello world");
-}
-
-typedef void(T)();
-
 @interface ViewController ()
 
 @end
@@ -25,9 +18,6 @@ typedef void(T)();
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    void* functionPtr = dlsym(RTLD_DEFAULT, "test");
-    T* f = functionPtr;
-    (*f)();
     
 }
 

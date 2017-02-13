@@ -1,15 +1,18 @@
 {
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "CE079F2222F6894145B7EA5C8A8FB5CB11DD96D4",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
     "44DBE8B648E65F3CB8ECF06D0DC94F0C85BF0BE7" : 9223372036854775807,
-    "D6326B344D07DF8AABB3FB6BF8C587B4CBBDEE70" : 9223372036854775807
+    "D6326B344D07DF8AABB3FB6BF8C587B4CBBDEE70" : 9223372036854775807,
+    "CE079F2222F6894145B7EA5C8A8FB5CB11DD96D4" : 9223372036854775807
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "481FD2E7-06A7-4621-89BE-34D58FFDFBAB",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
     "44DBE8B648E65F3CB8ECF06D0DC94F0C85BF0BE7" : "DynamOCTest\/DynamOC\/",
-    "D6326B344D07DF8AABB3FB6BF8C587B4CBBDEE70" : "DynamOCTest\/DynamOC\/third_party\/runtime\/"
+    "D6326B344D07DF8AABB3FB6BF8C587B4CBBDEE70" : "DynamOCTest\/DynamOC\/third_party\/runtime\/",
+    "CE079F2222F6894145B7EA5C8A8FB5CB11DD96D4" : "DynamOCTest\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "DynamOCTest",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
@@ -19,6 +22,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/g.hz.netease.com\/hzxuhui\/DynamOC.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "44DBE8B648E65F3CB8ECF06D0DC94F0C85BF0BE7"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "ssh:\/\/g.hz.netease.com:22222\/hzxuhui\/DynamOCTest.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CE079F2222F6894145B7EA5C8A8FB5CB11DD96D4"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/g.hz.netease.com\/hzxuhui\/runtime.git",
