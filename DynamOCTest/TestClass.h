@@ -10,5 +10,6 @@
 
 @interface TestClass : NSObject
 
+- (NSString *)echo:(NSInteger)x;
 
 @end

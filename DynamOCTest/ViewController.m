@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "TestClass.h"
 #import <LuaContext.h>
 
 @interface ViewController ()
@@ -20,8 +21,10 @@
     // Do any additional setup after loading the view, typically from a nib.
     LuaContext *context = get_luacontext();
     NSString *path = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"lua"];
-    [context evaluateScript:[NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil]]
-    
+    [context evaluateScript:[NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil]];
+    TestClass *test = [[TestClass alloc] init];
+    NSString *x = [test echo:200];
+    NSLog(@"%@", x);
 }
 
 
