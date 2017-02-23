@@ -10,9 +10,9 @@
 
 @implementation TestClass
 
-- (NSString *)echo:(NSInteger)x
-{
-    return @"hello";
-}
+//- (NSString *)echo:(NSInteger)x
+//{
+//    return @"hello";
+//}
 
 @end
