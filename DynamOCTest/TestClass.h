@@ -12,4 +12,6 @@
 
 //- (NSString *)echo:(NSInteger)x;
 
++ (void)blockTest:(NSString*(^)(NSString *))block;
+
 @end

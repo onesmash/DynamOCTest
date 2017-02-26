@@ -15,4 +15,10 @@
 //    return @"hello";
 //}
 
++ (void)blockTest:(NSString*(^)(NSString *))block
+{
+    [block copy];
+    NSLog(@"%@", block(@"fuck"));
+}
+
 @end
