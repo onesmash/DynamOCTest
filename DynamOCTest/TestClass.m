@@ -15,6 +15,11 @@
 //    return @"hello";
 //}
 
+- (void)dealloc
+{
+    
+}
+
 + (void)blockTest:(NSString*(^)(NSString *))block
 {
     [block copy];
