@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "DynamOC/DynamOC/DynamBlock.m"
-            timestampString = "510076573.582552"
+            filePath = "DynamOCTest/TestClass.m"
+            timestampString = "510159847.369546"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "132"
-            endingLineNumber = "132"
-            landmarkName = "-dealloc"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "+blockTest:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -26,12 +26,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DynamOC/DynamOC/DynamBlock.m"
-            timestampString = "510077599.550617"
+            timestampString = "510159853.525419"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "158"
-            endingLineNumber = "158"
-            landmarkName = "-forwardInvocation:"
+            startingLineNumber = "167"
+            endingLineNumber = "167"
+            landmarkName = "-copyWithZone:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
