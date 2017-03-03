@@ -118,12 +118,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0303BF091E509F0E00AC4108 /* Build configuration list for PBXNativeTarget "DynamOCTest" */;
 			buildPhases = (
-				87AA47834EF1CC360FBAA77E /* 📦 Check Pods Manifest.lock */,
+				87AA47834EF1CC360FBAA77E /* [CP] Check Pods Manifest.lock */,
 				0303BEEE1E509F0E00AC4108 /* Sources */,
 				0303BEEF1E509F0E00AC4108 /* Frameworks */,
 				0303BEF01E509F0E00AC4108 /* Resources */,
-				A6877A00B16FA03DAEFB4524 /* 📦 Embed Pods Frameworks */,
-				D20DF4E15A5A6BBFBEE05AB6 /* 📦 Copy Pods Resources */,
+				A6877A00B16FA03DAEFB4524 /* [CP] Embed Pods Frameworks */,
+				D20DF4E15A5A6BBFBEE05AB6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -145,7 +145,7 @@
 				TargetAttributes = {
 					0303BEF11E509F0E00AC4108 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = W49R76DKP3;
+						DevelopmentTeam = SAH4Y68J6G;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -183,29 +183,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		87AA47834EF1CC360FBAA77E /* 📦 Check Pods Manifest.lock */ = {
+		87AA47834EF1CC360FBAA77E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		A6877A00B16FA03DAEFB4524 /* 📦 Embed Pods Frameworks */ = {
+		A6877A00B16FA03DAEFB4524 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,14 +213,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DynamOCTest/Pods-DynamOCTest-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D20DF4E15A5A6BBFBEE05AB6 /* 📦 Copy Pods Resources */ = {
+		D20DF4E15A5A6BBFBEE05AB6 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,7 +359,7 @@
 			baseConfigurationReference = 09E2EE05CF80E109BEBCF20F /* Pods-DynamOCTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = W49R76DKP3;
+				DEVELOPMENT_TEAM = SAH4Y68J6G;
 				INFOPLIST_FILE = DynamOCTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.onesmash.DynamOCTest;
@@ -372,7 +372,7 @@
 			baseConfigurationReference = C47C2281B9D7B30B8852CBD4 /* Pods-DynamOCTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = W49R76DKP3;
+				DEVELOPMENT_TEAM = SAH4Y68J6G;
 				INFOPLIST_FILE = DynamOCTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.onesmash.DynamOCTest;
