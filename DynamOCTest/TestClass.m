@@ -22,7 +22,6 @@
 
 + (void)blockTest:(NSString*(^)(NSString *))block
 {
-    //NSLog(@"%@", block(@"fuck"));
     dispatch_async(dispatch_get_global_queue(0, 0), ^() {
         NSLog(@"%@", block(@"fuck"));
     });
