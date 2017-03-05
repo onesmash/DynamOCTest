@@ -9,11 +9,12 @@ runtime.addMethod(runtime.C.objc_getClass("TestClass"), runtime.SEL("echo:"),
                                                                 point.x = 2
                                                             end)
                                                             print(point.x, point.y)
+                                                            print(x:isKindOfClass(runtime.NSBlock))
                                                             return runtime.Obj("world") 
-                                                        end, "@@:q")
+                                                        end, "@@:@")
 
-local test = runtime.TestClass:alloc():init()
-test:echo(1111)
+--local test = runtime.TestClass:alloc():init()
+--test:echo(1111)
 
 --local test = runtime.ffi.new("struct Test", {0})
 --local up = runtime.Obj("hello1")
