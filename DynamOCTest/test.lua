@@ -13,6 +13,16 @@ runtime.addMethod(runtime.C.objc_getClass("TestClass"), runtime.SEL("echo:"),
                                                             return runtime.Obj("world") 
                                                         end, "@@:@")
 
+print(22222)
+local class = runtime.createClass(runtime.NSObject, "HelloClass")
+print(class)
+print(runtime.HelloClass)
+runtime.addProperty(runtime.HelloClass, "str", {typeEncoding = "@", ownerShip = "copy"})
+local t = runtime.HelloClass:alloc():init()
+t:setStr_(runtime.Obj("fxxxxxk"))
+print(t:str())
+print(1111)
+
 --local test = runtime.TestClass:alloc():init()
 --test:echo(1111)
 

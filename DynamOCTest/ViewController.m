@@ -23,8 +23,8 @@
     NSString *path = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"lua"];
     [context evaluateScript:[NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil]];
     void(^block)() = ^() {};
-    TestClass *test = [[TestClass alloc] init];
-    [test performSelector:@selector(echo:) withObject:@1];
+    //TestClass *test = [[TestClass alloc] init];
+    //[test performSelector:@selector(echo:) withObject:@1];
 }
 
 
