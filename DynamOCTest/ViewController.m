@@ -22,11 +22,12 @@
     LuaContext *context = get_current_luacontext();
     NSString *path = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"lua"];
     [context evaluateScript:[NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil]];
+    NSLog(@"xxxxx");
     //TestClass *test = [[TestClass alloc] init];
     //[test performSelector:@selector(echo:) withObject:@1];
-    Class helloClass = NSClassFromString(@"HelloClass");
-    id test = [[helloClass alloc] init];
-    NSLog(@"%@", [test performSelector:@selector(str) withObject:nil]);
+    //Class helloClass = NSClassFromString(@"HelloClass");
+    //id test = [[helloClass alloc] init];
+//    NSLog(@"%@", [test performSelector:@selector(str) withObject:nil]);
 }
 
 

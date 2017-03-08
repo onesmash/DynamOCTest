@@ -14,16 +14,22 @@ runtime.debug = false
 --                                                         end, "@@:@")
 
 --print(22222)
-local class = runtime.createClass(runtime.NSObject, "HelloClass", nil, {str = {typeEncoding = "@", ownerShip = "copy"}, point = {typeEncoding = "{CGPoint=\"x\"d\"y\"d}"}})
---runtime.addProperty(runtime.HelloClass, "str", {typeEncoding = "@", ownerShip = "copy"})
+local class = runtime.createClass(runtime.NSObject, "HelloClass", nil, {str = {typeEncoding = "@", ownerShip = "copy"}, point = {typeEncoding = runtime.encode.CGPoint}})
 runtime.addMethod(runtime.HelloClass, runtime.SEL("init"), function(self, cmd)
     self = runtime.callSuper(self, cmd)
     if self then
         self:setStr(runtime.Obj("Hello world"))
-        self:setPoint(cocoa.CGPoint({0, 0}))
+        self:setPoint(cocoa.CGPoint({0, 1}))
     end
     return self
 end, "@@:")
+
+local test = runtime.HelloClass:alloc():init()
+local point = test:point();
+print(point.x, point.y)
+
+-- local typeArr = runtime.parseTypeEncoding("{CGPoint=dd}")
+-- print(runtime.typeToCType(typeArr[1]))
 
 
 --local test = runtime.TestClass:alloc():init()
