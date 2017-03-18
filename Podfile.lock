@@ -1,7 +1,7 @@
 PODS:
   - DynamOC (0.0.7):
-    - LuaJIT (~> 0.1.8)
-  - LuaJIT (0.1.10)
+    - LuaJIT (~> 0.1.12)
+  - LuaJIT (0.1.12)
 
 DEPENDENCIES:
   - DynamOC (from `DynamOC`)
@@ -11,8 +11,8 @@ EXTERNAL SOURCES:
     :path: DynamOC
 
 SPEC CHECKSUMS:
-  DynamOC: f202d6997569587a8d473743350258079479fabe
-  LuaJIT: d8599e3072ad402cf21c1c28ededfca9cf27536e
+  DynamOC: a4b431c8068ac60495f7fc5eda44f3d1633a6195
+  LuaJIT: 47f581a2352a8054bec3bb107f0545e5ef32b9b6
 
 PODFILE CHECKSUM: 9fcf01b5b8cdda3607e356a2d7b6dbee04ba281b
 
