@@ -11,6 +11,8 @@
 #import <LuaContext.h>
 #import <DynamBlock.h>
 
+extern NSString *selectorStringFromMethodNameWithUnderscores(const char *name);
+
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 
@@ -21,6 +23,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    NSLog(@"%@", selectorStringFromMethodNameWithUnderscores("x_xt_x"));
     
     LuaContext *context = get_current_luacontext();
     NSString *path = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"lua"];

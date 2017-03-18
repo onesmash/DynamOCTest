@@ -1,7 +1,7 @@
 PODS:
   - DynamOC (0.0.7):
     - LuaJIT (~> 0.1.8)
-  - LuaJIT (0.1.8)
+  - LuaJIT (0.1.10)
 
 DEPENDENCIES:
   - DynamOC (from `DynamOC`)
@@ -12,8 +12,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   DynamOC: f202d6997569587a8d473743350258079479fabe
-  LuaJIT: bcbac02ba6fec133d1461140c7dd4c5737e4a526
+  LuaJIT: d8599e3072ad402cf21c1c28ededfca9cf27536e
 
 PODFILE CHECKSUM: 9fcf01b5b8cdda3607e356a2d7b6dbee04ba281b
 
-COCOAPODS: 1.0.0
+COCOAPODS: 1.2.0
