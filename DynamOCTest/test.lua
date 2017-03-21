@@ -3,6 +3,10 @@ runtime.relaxedSyntax = false
 runtime.ffi.cdef[[
 unsigned int sleep(unsigned int);
 ]]
+local array = runtime.Obj({"hello", "world"})
+array:enumerateObjectsUsingBlock_(runtime.createBlock(function(str, index, stop)
+    cocoa.NSLog(runtime.Obj("%@"), str)
+end, runtime.encode.void..runtime.encode.id..runtime.encode.id..runtime.encode.NSUInteger.."^B"))
 
 runtime.addMethod(runtime.ViewController, runtime.SEL("tableView:numberOfRowsInSection:"), function(self, cmd, tableView, section)
     return 100
