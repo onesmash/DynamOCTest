@@ -30,8 +30,8 @@ extern NSString *selectorStringFromMethodNameWithUnderscores(const char *name);
     NSString *path = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"lua"];
     [context evaluateScript:[NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil]];
    
-    self.tableView.delegate = self;
-    self.tableView.dataSource = self;
+//    self.tableView.delegate = self;
+//    self.tableView.dataSource = self;
     
     TestClass *test = [[TestClass alloc] init];
     NSDate *start = [NSDate date];
