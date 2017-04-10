@@ -9,7 +9,6 @@
 #import "ViewController.h"
 #import "TestClass.h"
 #import <LuaContext.h>
-#import <DynamBlock.h>
 
 extern NSString *selectorStringFromMethodNameWithUnderscores(const char *name);
 

@@ -1,5 +1,5 @@
 PODS:
-  - DynamOC (0.0.7):
+  - DynamOC (0.0.9):
     - LuaJIT (~> 0.1.8)
   - LuaJIT (0.1.14)
 
@@ -11,9 +11,9 @@ EXTERNAL SOURCES:
     :path: DynamOC
 
 SPEC CHECKSUMS:
-  DynamOC: d93e06300e2b3d7176007f0c8d05cf8cf0af8d03
+  DynamOC: c2771e3f6d2b34a4c25f7ba5b992c91e1aacd5c9
   LuaJIT: e6e9c5dfc4748c8e2ba8c5ac3dd29cb1cca456ea
 
 PODFILE CHECKSUM: 9fcf01b5b8cdda3607e356a2d7b6dbee04ba281b
 
-COCOAPODS: 1.0.0
+COCOAPODS: 1.2.0
