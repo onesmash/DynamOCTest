@@ -23,15 +23,16 @@ extern NSString *selectorStringFromMethodNameWithUnderscores(const char *name);
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSLog(@"%@", selectorStringFromMethodNameWithUnderscores("x_xt_x"));
+    NSLog(@"%@", selectorStringFromMethodNameWithUnderscores("x____xt_x"));
     
-    LuaContext *context = get_current_luacontext();
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    
+    LuaContext *context = [LuaContext currentContext];
     NSString *path = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"lua"];
     [context evaluateScript:[NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil]];
-   
-//    self.tableView.delegate = self;
-//    self.tableView.dataSource = self;
-    
+
+    [self.tableView registerClass:NSClassFromString(@"ImageCell") forCellReuseIdentifier:@"ImageCell"];
     TestClass *test = [[TestClass alloc] init];
     NSDate *start = [NSDate date];
     for (NSInteger i = 0; i < 10000; i++) {
@@ -48,7 +49,22 @@ extern NSString *selectorStringFromMethodNameWithUnderscores(const char *name);
 }
 
 #pragma mark - UITableViewDelegate
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 120;
+}
 
 #pragma mark - UITableViewDataSource
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 1000;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ImageCell"];
+    [cell performSelector:@selector(refreshImage)];
+    return cell;
+}
 
 @end
