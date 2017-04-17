@@ -2,13 +2,13 @@ PODS:
   - DynamOC (0.0.10):
     - LuaJIT (~> 0.1.8)
   - LuaJIT (0.1.14)
-  - SDWebImage (3.8.2):
-    - SDWebImage/Core (= 3.8.2)
-  - SDWebImage/Core (3.8.2)
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
 
 DEPENDENCIES:
   - DynamOC (from `DynamOC`)
-  - SDWebImage (~> 3.8)
+  - SDWebImage (~> 4.0)
 
 EXTERNAL SOURCES:
   DynamOC:
@@ -17,8 +17,8 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   DynamOC: 814ac0e4020f2ac4e89db5b0aa8bf9a6caf12d09
   LuaJIT: e6e9c5dfc4748c8e2ba8c5ac3dd29cb1cca456ea
-  SDWebImage: '098e97e6176540799c27e804c96653ee0833d13c'
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
 
-PODFILE CHECKSUM: 2a1e2451c901c6290b69cebf8dc9fc7bf5e0d910
+PODFILE CHECKSUM: 7f442607c095db5bcb3ee1b1f13ea9eb01c18b30
 
 COCOAPODS: 1.2.0

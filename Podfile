@@ -5,5 +5,5 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 target 'DynamOCTest' do
 	pod 'DynamOC',  :path => 'DynamOC'
-    pod 'SDWebImage', '~>3.8'
+    pod 'SDWebImage', '~> 4.0'
 end
