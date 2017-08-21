@@ -13,7 +13,7 @@ runtime.addMethod(runtime.ImageCell, runtime.SEL("initWithStyle:reuseIdentifier:
     end
     self:contentView():addSubview_(self:webImageView())
     return self
-end, "@@:"..runtime.encode.NSInteger..runtime.encode.id)
+end)
 
 local option = bit.lshift(1, 4)
 runtime.addMethod(runtime.ImageCell, runtime.SEL("refreshImage"), function(self, cmd)
@@ -30,9 +30,9 @@ end, "v@:")
 --     cocoa.NSLog(runtime.Obj("%@"), str)
 -- end, runtime.encode.void..runtime.encode.id..runtime.encode.id..runtime.encode.NSUInteger.."^B"))
 
--- runtime.addMethod(runtime.ViewController, runtime.SEL("tableView:numberOfRowsInSection:"), function(self, cmd, tableView, section)
---     return 100
--- end, runtime.encode.NSInteger..runtime.encode.id..runtime.encode.SEL..runtime.encode.id..runtime.encode.NSInteger)
+runtime.addMethod(runtime.ViewController, runtime.SEL("tableView:numberOfRowsInSection:"), function(self, cmd, tableView, section)
+    return 100
+end)
 
 
 -- dispatch.async(dispatch.get_global_queue(0, 0), function()
