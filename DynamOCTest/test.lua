@@ -49,14 +49,11 @@ end)
 --         end
 --     end)
 
--- runtime.addMethod(runtime.ViewController, runtime.SEL("tableView:cellForRowAtIndexPath:"), function(self, cmd, tableView, indexPath)
---     local cell = tableView:dequeueReusableCellWithIdentifier_(runtime.Obj("test"))
---     if cell == nil then
---         cell = runtime.UITableViewCell:alloc():initWithStyle_reuseIdentifier_(cocoa.UITableViewCellStyleDefault, runtime.Obj("test"))
---     end
---     cell:textLabel():setText_(indexPath:description())
---     return cell
--- end, runtime.encode.id..runtime.encode.id..runtime.encode.SEL..runtime.encode.id..runtime.encode.id)
+runtime.addMethod(runtime.ViewController, runtime.SEL("tableView:cellForRowAtIndexPath:"), function(self, cmd, tableView, indexPath)
+    local cell = tableView:dequeueReusableCellWithIdentifier_(runtime.Obj("ImageCell"))
+    cell:refreshImage()
+    return cell
+ end)
 
 runtime.addMethod(runtime.TestClass, runtime.SEL("echo"), 
                                                         function(self, cmd) 
