@@ -27,4 +27,13 @@
     });
 }
 
+- (BOOL)boolTest
+{
+    return [(NSString *)nil isEqualToString:@"action"];
+}
+
+- (NSString *)stringTest
+{
+    return nil;
+}
 @end

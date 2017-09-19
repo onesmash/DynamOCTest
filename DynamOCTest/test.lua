@@ -60,7 +60,7 @@ end)
 
 runtime.addMethod(runtime.TestClass, runtime.SEL("echo"), 
                                                         function(self, cmd) 
-                                                             
+                                                            --print(self:stringTest():length())
                                                         end, "v@:")
 
 --print(22222)
