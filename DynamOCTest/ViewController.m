@@ -30,7 +30,8 @@ extern NSString *selectorStringFromMethodNameWithUnderscores(const char *name);
     
     LuaContext *context = [LuaContext currentContext];
     NSString *path = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"lua"];
-    [context evaluateScript:[NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil]];
+    NSError *error;
+    [context evaluateScript:[NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil] error:&error];
 
     [self.tableView registerClass:NSClassFromString(@"ImageCell") forCellReuseIdentifier:@"ImageCell"];
     TestClass *test = [[TestClass alloc] init];
