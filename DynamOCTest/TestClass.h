@@ -7,11 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface TestClass : NSObject
 
 //- (NSString *)echo:(NSInteger)x;
 
-+ (void)blockTest:(NSString*(^)(NSString *))block;
++ (void)blockTest:(CGSize(^)(NSString *))block;
 
 @end

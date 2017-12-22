@@ -20,10 +20,11 @@
     
 }
 
-+ (void)blockTest:(NSString*(^)(NSString *))block
++ (void)blockTest:(CGSize(^)(NSString *))block
 {
     dispatch_async(dispatch_get_global_queue(0, 0), ^() {
-        NSLog(@"%@", block(@"fuck"));
+        CGSize size = block(@"fuck");
+        NSLog(@"%f, %f", size.width, size.height);
     });
 }
 

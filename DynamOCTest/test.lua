@@ -37,16 +37,16 @@ end)
 
 -- dispatch.async(dispatch.get_global_queue(0, 0), function()
 --     while true do
---         print("hello")
---         runtime.NSThread:sleepForTimeInterval(0.1)
+--         print(100)
+--         --runtime.NSThread:sleepForTimeInterval(0.1)
 --     end
 -- end)
 
 -- dispatch.async(dispatch.get_global_queue(0, 0), function()
---         while true do
---             print("world")
---             runtime.NSThread:sleepForTimeInterval(0.1)
---         end
+--         -- while true do
+--         --     print(2)
+--         --     --runtime.NSThread:sleepForTimeInterval(0.1)
+--         -- end
 --     end)
 
 runtime.addMethod(runtime.ViewController, runtime.SEL("tableView:cellForRowAtIndexPath:"), function(self, cmd, tableView, indexPath)
@@ -80,18 +80,7 @@ runtime.addMethod(runtime.TestClass, runtime.SEL("echo"),
 
 --local test = runtime.ffi.new("struct Test", {0})
 --local up = runtime.Obj("hello1")
---local block = runtime.createBlock(function(s) print(up) print(test) return s end, "@@@")
--- local x = 1
--- dispatch.async(dispatch.get_global_queue(0, 0), 
---     function() 
---         print(x)
---         dispatch.sync(dispatch.mainQueue, 
---             function() 
---                 print(up) print(test) 
---                 x= 2
---             end)
---         print(x) 
---     end)
---runtime.TestClass:blockTest(block)
+local block = runtime.createBlock(function(s) print(s) return cocoa.CGSize({100, 100}) end, runtime.encode.CGSize.."@@")
+runtime.TestClass:blockTest_(block)
 
 
