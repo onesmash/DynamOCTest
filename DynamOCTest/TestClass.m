@@ -22,7 +22,7 @@
 
 + (void)blockTest:(CGSize(^)(NSString *))block
 {
-    dispatch_async(dispatch_get_global_queue(0, 0), ^() {
+    dispatch_sync(dispatch_get_global_queue(0, 0), ^() {
         CGSize size = block(@"fuck");
         NSLog(@"%f, %f", size.width, size.height);
     });

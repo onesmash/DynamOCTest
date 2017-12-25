@@ -22,9 +22,8 @@ extern NSString *selectorStringFromMethodNameWithUnderscores(const char *name);
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     NSLog(@"%@", selectorStringFromMethodNameWithUnderscores("x____xt_x"));
-    
+    printf("%s", @encode(CGRect));
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     
@@ -58,11 +57,13 @@ extern NSString *selectorStringFromMethodNameWithUnderscores(const char *name);
 #pragma mark - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+    NSLog(@"native call numberOfRowsInSection");
     return 1000;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    NSLog(@"native call cellForRowAtIndexPath");
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ImageCell"];
     [cell performSelector:@selector(refreshImage)];
     return cell;
